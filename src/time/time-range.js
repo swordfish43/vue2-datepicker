@@ -69,7 +69,7 @@ export default {
     const { prefixClass } = this;
 
     return (
-      <div class={`${prefixClass}-range-wrapper`}>
+      <div class={`${prefixClass}-range-wrapper ${prefixClass}-calendar-time`}>
         <TimePanel
           {...this.$props}
           {...this.$attrs}

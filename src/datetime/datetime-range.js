@@ -87,12 +87,10 @@ export default {
       onClicktitle: this.closeTimePanel,
     };
 
-    const { prefixClass } = this;
-
     return (
       <div>
         <CalendarRange {...calendarProps} />
-        {this.timeVisible && <TimeRange class={`${prefixClass}-calendar-time`} {...timeProps} />}
+        {this.timeVisible && <TimeRange {...timeProps} />}
       </div>
     );
   },
